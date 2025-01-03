@@ -1,4 +1,5 @@
 import random
+import time
 
 # Program to practice matrix multiplication, because
 # otherwise I will never learn this shit fully
@@ -111,9 +112,22 @@ print_pretty_matrix(mat1)
 print(f"N ({n} x {m} - Matrix):")
 print_pretty_matrix(mat2)
 
+# Record the start time
+start_time = time.time()
+
 input("Press enter to see the matrices multiplied \n")
+
+# Calculate the elapsed time
+elapsed_time = time.time() - start_time
+
+# Convert the elapsed time to minutes and seconds
+minutes = int(elapsed_time // 60)
+seconds = int(elapsed_time % 60)
 
 print(f"M * N ({d} x {m} - Matrix):")
 print_pretty_matrix(res)
+
+# Output the elapsed time in a human-readable format
+print(f"Time taken: {minutes} min and {seconds} sec")
 
 # give input options for user to give their calcution result
