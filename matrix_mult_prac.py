@@ -128,6 +128,6 @@ print(f"M * N ({d} x {m} - Matrix):")
 print_pretty_matrix(res)
 
 # Output the elapsed time in a human-readable format
-print(f"Time taken: {minutes} min and {seconds} sec")
+print(f"Time taken: {minutes} minutes and {seconds} seconds")
 
 # give input options for user to give their calcution result
